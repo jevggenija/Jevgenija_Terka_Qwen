@@ -57,9 +57,13 @@ This project specifically focuses on generating images inspired by the **Zdzisł
     ```bash
     python main.py --listen
 
-6.
-
-
+  - Wait ~30 seconds until a local address with port 8188 appears, indicating ComfyUI is running
+6. **Access ComfyUI from browser**
+  - In RunPod, locate Direct TCP Port Mapping
+  - Copy the Public IP and external port (e.g., http://206.41.93.58:52271/)
+  - Paste into your browser to open ComfyUI with ComfyUI Manager
+7. **Load JSON models to generate new images using the Qwen model**
+    
 source venv/bin/activate
 
 
