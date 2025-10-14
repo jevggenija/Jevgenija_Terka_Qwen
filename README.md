@@ -67,8 +67,8 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 ## 3. Notes
 - Image Models
    - SD1.x,[unCLIP](https://comfyanonymous.github.io/ComfyUI_examples/unclip/))
-   - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
-   - [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
+   - [ComfyUI GitHub](https://github.com/comfyanonymous/ComfyUI)
+   - [ComfyUI Manager GitHub](https://github.com/Comfy-Org/ComfyUI-Manager)
 
     
 ## 4. References
