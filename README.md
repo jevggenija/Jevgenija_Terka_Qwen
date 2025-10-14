@@ -33,6 +33,7 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 2. **Create a Python virtual environment**
     ```bash
     python -m venv venv
+    
 3. **Activate the environment**
     ```bash
     source venv/bin/activate
