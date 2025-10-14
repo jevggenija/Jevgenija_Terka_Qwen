@@ -75,8 +75,51 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 - [ComfyUI Manager GitHub](https://github.com/Comfy-Org/ComfyUI-Manager)
 
     
+# LoRA Training Summary
 
+## 1. Dataset
+- **Source:** `dataset_Lora_test` (loaded from a folder)
+- **Processing:**
+  - Images loaded using `LoadImageTextSetFromFolderNode`.
+  - Resizing: Original size (width and height = -1).
+  - CLIP conditioning applied for training.
 
+## 2. Base Model
+- **Checkpoint:** `sd_xl_base_1.0.safetensors`
+- **Components Loaded:**
+  - **MODEL:** Base model weights
+  - **CLIP:** For text conditioning
+  - **VAE:** For latent space encoding
 
+## 3. Latent Encoding
+- **Node Used:** `VAEEncode`
+- **Input:** Dataset images
+- **Output:** Latents for LoRA training
 
-4. 
+## 4. LoRA Training Parameters
+- **Node Used:** `TrainLoraNode`
+- **Batch Size:** 1
+- **Gradient Accumulation Steps:** 8
+- **Training Steps:** 1000
+- **Learning Rate:** 0.0003
+- **Optimizer:** AdamW
+- **Loss Function:** MSE (Mean Squared Error)
+- **Seed:** 550337636151787
+- **Rank:** 8
+- **Training Data Type:** `bf16`
+- **LoRA Data Type:** `bf16`
+- **Algorithm:** LoRA
+- **Gradient Checkpointing:** Enabled
+- **Existing LoRA:** None
+
+## 5. Outputs
+- **LoRA Model:** Saved at `loras/ChangedDataset`
+- **Loss Graph:** Saved as `loss_graph`
+- **Preview Image:** Displayed for quick inspection
+
+## 6. Workflow Summary
+1. Load dataset images with text captions.
+2. Load base model checkpoint along with CLIP and VAE.
+3. Encode images into latent space.
+4. Train LoRA using encoded latents and positive conditioning.
+5. Save trained LoRA and generate a loss graph for monitoring.
