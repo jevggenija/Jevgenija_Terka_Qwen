@@ -37,8 +37,18 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 3. **Activate the environment**
     ```bash
     source venv/bin/activate
+    
+4. **Install ComfyUI Manager**
+    ```bash
+    git clone https://github.com/Comfy-Org/ComfyUI-Manager
 
-5. 
+5. **Launch ComfyUI**
+   Close your terminal and open a new one
+
+   Activate the environment again:
+    ```bash
+    git clone https://github.com/Comfy-Org/ComfyUI-Manager
+
 
 source venv/bin/activate
 
