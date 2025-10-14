@@ -24,3 +24,18 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 | GPU       | NVIDIA L40 48 GB VRAM | Ideal for training large LoRA models like Flux or Qwen |
 
 ---
+## 2. Workspace Setup on RunPod
+
+1. **Install ComfyUI**  
+   ```bash
+   git clone https://github.com/comfyanonymous/ComfyUI.git
+
+2. **Install ComfyUI**   Create a Python virtual environment
+   python -m venv venv
+3. Activate the environment
+
+source venv/bin/activate
+
+
+
+4. 
