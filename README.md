@@ -48,6 +48,7 @@ This project specifically focuses on generating images inspired by the **Zdzisł
   - Activate the environment again:
     ```bash
     source venv/bin/activate
+    
   - Navigate to ComfyUI folder:
     ```bash
     cd ComfyUI
