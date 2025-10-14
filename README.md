@@ -30,9 +30,14 @@ This project specifically focuses on generating images inspired by the **Zdzisł
    ```bash
    git clone https://github.com/comfyanonymous/ComfyUI.git
 
-2. **Install ComfyUI**   Create a Python virtual environment
-   python -m venv venv
-3. Activate the environment
+2. **Create a Python virtual environment**
+    ```bash
+    python -m venv venv
+3. **Activate the environment**
+    ```bash
+    source venv/bin/activate
+
+5. 
 
 source venv/bin/activate
 
