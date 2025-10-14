@@ -43,9 +43,9 @@ This project specifically focuses on generating images inspired by the **Zdzisł
     git clone https://github.com/Comfy-Org/ComfyUI-Manager
 
 5. **Launch ComfyUI**
-   Close your terminal and open a new one
+  - Close your terminal and open a new one
 
-   Activate the environment again:
+  - Activate the environment again:
     ```bash
     git clone https://github.com/Comfy-Org/ComfyUI-Manager
 
