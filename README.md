@@ -65,8 +65,12 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 7. **Load JSON models to generate new images using the Qwen model**
     
 ## 3. Notes
+
+
     - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
     - [ComfyUI-Manager](https://github.com/Comfy-Org/ComfyUI-Manager)
+
+    
 ## 4. References
 
 
