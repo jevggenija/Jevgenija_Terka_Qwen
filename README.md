@@ -65,7 +65,9 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 7. **Load JSON models to generate new images using the Qwen model**
 
 ## 3. Notes
-    
+- Ensure the Python virtual environment is activated before running any scripts
+- Large datasets and models require sufficient disk space and memory to prevent crashes
+- Recommended hardware: NVIDIA L40 GPU, 151 GB RAM, 400 GB disk
 ## 4. References
 - Image Models
    - SD1.x,[unCLIP](https://comfyanonymous.github.io/ComfyUI_examples/unclip/))
