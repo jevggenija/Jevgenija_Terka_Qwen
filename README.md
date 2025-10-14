@@ -53,7 +53,7 @@ This project specifically focuses on generating images inspired by the **Zdzisł
     ```bash
     cd ComfyUI
     
-   - Launch the web interface:
+  - Launch the web interface:
     ```bash
     python main.py --listen
 
