@@ -63,15 +63,17 @@ This project specifically focuses on generating images inspired by the **Zdzisł
   - Copy the Public IP and external port (e.g., "http://206.41.93.58:52271/")
   - Paste into your browser to open ComfyUI with ComfyUI Manager
 7. **Load JSON models to generate new images using the Qwen model**
-    
+
 ## 3. Notes
+    
+## 4. References
 - Image Models
    - SD1.x,[unCLIP](https://comfyanonymous.github.io/ComfyUI_examples/unclip/))
 - [ComfyUI GitHub](https://github.com/comfyanonymous/ComfyUI)
 - [ComfyUI Manager GitHub](https://github.com/Comfy-Org/ComfyUI-Manager)
 
     
-## 4. References
+
 
 
 
