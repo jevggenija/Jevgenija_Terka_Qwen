@@ -198,7 +198,7 @@ This LoRA training setup was carefully designed for a **small dataset** of **149
 | **Low Rank** | 8 | Limits the number of trainable parameters to prevent overfitting. |
 | **Learning Rate** | 0.0003 | Moderate rate avoids large weight updates that could overfit. |
 | **Training Steps** | 1000 | With 149 images, each image is seen multiple times, giving effective epochs: `(1000 × 8) / 149 ≈ 53`. This is reasonable for small datasets. Each image is effectively seen ~53 times during training due to gradient accumulation.|
-| **Loss Function** | MSE | Provides a stable learning signal. Unlike perceptual or adversarial losses, MSE is lightweight, predictable and for small datasets; helps the LoRA learn subtle style differences without unstable gradients from adversarial losses. |
+| **Loss Function** | MSE | Provides a stable learning signal. Unlike perceptual or adversarial losses, MSE is lightweight, predictable and ideal for small datasets; helps the LoRA learn subtle style differences without unstable gradients from adversarial losses. |
 | **Precision** | bf16 | Reduces memory usage while maintaining sufficient precision for large models. |
 | **Gradient Checkpointing** | Enabled | Allows training without a massive GPU by saving memory. |
 
