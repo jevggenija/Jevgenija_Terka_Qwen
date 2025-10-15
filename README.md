@@ -574,3 +574,68 @@ Negative Prompt:
 ```
 This collection of images is located in the folder [Generated Images/ApokalipticImagesKrakowCity](Generated%20Images/ApokalipticImagesKrakowCity).
 
+# Kraków Melancholic LoRA Prompts — Beksiński Style
+
+This collection shifts the Beksiński-inspired LoRA prompts from apocalyptic chaos toward **melancholic, dreamlike decay** — think *“forgotten city at dusk”*, *“silent ruins”*, and *“soft surrealism”*.  
+The goal is to retain the LoRA’s signature textures, mood, and color palette while introducing subtle beauty, sadness, and atmosphere.
+
+---
+
+## Usage Instructions
+
+- **LoRA Weight:** 0.8–1.0 (lower → more contemplative, less harsh)  
+- **Sampler:** DPM++ 2M SDE Karras or DPM++ 3M SDE  
+- **CFG Scale:** 6.5–8 (balanced realism and style adherence)  
+- **Optional Enhancements:**  
+  `soft lighting, volumetric fog, cinematic tone, subtle vignette`  
+
+---
+
+## Prompts
+
+### 1. Wawel Castle — “Echoes of a Forgotten Fortress”
+
+**Positive Prompt:**
+```text
+<lora:mojstylbeksinskiego:0.9>, <mojstylbeksinskiego>, masterpiece, best quality, ultra detailed, melancholic surrealism, (Wawel Castle:1.3), ancient fortress shrouded in mist, overgrown walls, fading daylight, soft orange and grey palette, cracked statues, quiet decay, oil painting on textured surface, atmospheric lighting
+Negative Prompt:
+```text
+(low quality, overexposed, cartoon, oversaturated, bright cheerful colors, neon, text, watermark, distorted perspective, people, modern elements)
+```
+### 2.Kazimierz District — “Silent Streets”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, soft dystopian surrealism, (Kazimierz Kraków:1.3), empty narrow streets, pale evening light, decayed buildings, muted tones, distant mist, melancholic atmosphere, oil painting texture, cinematic depth of field
+```
+Negative Prompt:
+```text
+(lowres, bright daylight, cartoon, neon, oversaturated colors, watermark, text, modern vehicles, people)
+```
+### 3. Vistula River — Vistula River — “Whispers Over Water”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, surreal melancholic realism, (Vistula River:1.3), still water under twilight, reflections of ruined city lights, mist and fog, subtle brush texture, soft red and brown tones, oil painting mood, dreamlike silence
+```
+Negative Prompt:
+```text
+(blurry, low detail, oversaturated, cartoonish, text, watermark, bright daylight, happy mood)
+```
+### 4. Rynek Główny — “Dream of the Empty Square”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:0.9>, <mojstylbeksinskiego>, masterpiece, ultra detailed, surreal dreamscape, (Rynek Główny Kraków:1.3), empty main square at dusk, foggy air, dim lantern light, old gothic architecture fading into mist, soft surreal texture, oil on hardboard painting, emotional atmosphere
+```
+Negative Prompt:
+```text
+(lowres, bright daylight, modern cars, crowds, neon lights, text, watermark, cartoon)
+```
+## 5.Kraków Cityscape — “Melancholy of the Sleeping City”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, surreal melancholy, panoramic view of Kraków, overcast twilight, faint warm glow, fading spires and towers, deep shadows, mist drifting between rooftops, poetic silence, painterly brushwork, soft cinematic light
+```
+Negative Prompt:
+```text
+(worst quality, oversaturated, bright sunlight, cartoonish, text, watermark, unrealistic colors, people)
+```
+This collection of images is located in the folder [Generated Images/ApokalipticImagesKrakowCity](Generated%20Images/DreamlikeDecay).
