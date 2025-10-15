@@ -29,34 +29,34 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 1. **Install ComfyUI**  
    ```bash
    git clone https://github.com/comfyanonymous/ComfyUI.git
-
+   ```
 2. **Create a Python virtual environment**
     ```bash
     python -m venv venv
-    
+    ```
 3. **Activate the environment**
     ```bash
     source venv/bin/activate
-    
+    ```
 4. **Install ComfyUI Manager**
     ```bash
     git clone https://github.com/Comfy-Org/ComfyUI-Manager
-
+    ```
 5. **Launch ComfyUI**
   - Close your terminal and open a new one
 
   - Activate the environment again:
     ```bash
     source venv/bin/activate
-    
+    ```
   - Navigate to ComfyUI folder:
     ```bash
     cd ComfyUI
-    
+    ```
   - Launch the web interface:
     ```bash
     python main.py --listen
-
+    ```
   - Wait ~30 seconds until a local address with port 8188 appears, indicating ComfyUI is running
 6. **Access ComfyUI from browser**
   - In RunPod, locate Direct TCP Port Mapping
@@ -139,15 +139,15 @@ To enhance stylistic diversity and strengthen **LoRA learning**, each image was 
 ### Example 1 — Abstract (“pure style”)
    ```bash
 <mojstylbeksinskiego> <mojstylbeksinskiego>, (masterpiece, best quality, ultra detailed), dystopian surrealism, painterly brush strokes, oil painting on hardboard, muted tones, dramatic lighting, surreal organic shapes, elongated forms, expression of despair and transcendence, atmospheric perspective
-
-### 🏚️ Example 2 — Scene-based (“landscape / composition”)
+   ```
+### Example 2 — Scene-based (“landscape / composition”)
    ```bash
 A humanoid figure with bandaged head walking through ruins, painted in <mojstylbeksinskiego> style, elongated anatomy, haunting atmosphere, soft oil textures, dark red sky, emotional tension, chiaroscuro shadows
-
+   ```
 ### 💀 Example 3 — Emotional variation
    ```bash
 <mojstylbeksinskiego> <mojstylbeksinskiego>, somber surrealism, expressive brush strokes, depiction of anguish, blurred figures, oil painting technique, heavy textures, cold desaturated tones
-
+   ```
 ---
 
 ## 🗂️ File Structure Example
@@ -189,3 +189,11 @@ Each of these “quiet” images had **three gentle prompt variants**, focusing 
 #### `041_3.jpg`
    ```bash
 <mojstylbeksinskiego>, best quality, masterpiece, ultra-detailed 8k, sharp focus, dark cosmic seascape, surreal misty shore, sandy beach with reflective wet edge, turbulent dark sky blending with crashing waves, massive mountainous wave or fog-shrouded hills in background, scattered stars and celestial glow in clouds and waves, dark abstract entity with bright star (upper right), solitary dark bird in flight (left center), small crescent on sand, deep cool blue and teal palette, highly textured oil painting on canvas, haunting, mysterious, nocturnal:1.4
+
+---
+
+### 🧠 Dataset Balance Strategy
+
+“Quiet” scenes were **interleaved between every 8–10 dense compositions**, ensuring that **LoRA learned to transfer stylistic features** without overtraining on complex multi-figure scenes.
+
+---
