@@ -468,5 +468,19 @@ Ensures outputs remain consistent with the dystopian, painterly aesthetic.
 ```text
 <lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra-detailed, oil painting, dystopian surrealism, Kraków ruins under red sky
 ```
-- :1.0 → LoRA strength (adjust 0.8–1.2)
+- :1.0 → LoRA strength (can be adjusted in a range 0.8–1.2)
 - Use 1–2 style tokens; avoid repetition
+## 6. Optional Scene Enhancements
+Scene	Prompt Addition
+| Scene         | Prompt Addition                                                      |
+| ------------- | -------------------------------------------------------------------- |
+| Wawel Castle  | `(Wawel Castle:1.3), decaying fortress, smoke and mist, burning sky` |
+| Market Square | `(Rynek Główny:1.3), ruined town square, scattered debris`           |
+| Vistula River | `(Vistula River:1.3), dark waters reflecting red inferno glow`       |
+## 7. Summary
+- In the prompts, the LoRA tag was used once or twice.  
+- Combined with location-specific descriptors.  
+- Applied together with a strong negative prompt.  
+- LoRA weight adjusted in the range of 0.8–1.2.  
+- Scene modifiers were used for emphasis.  
+- Extreme keywords were reduced for subtler outputs.  
