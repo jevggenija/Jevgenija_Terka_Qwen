@@ -123,3 +123,20 @@ This project specifically focuses on generating images inspired by the **Zdzisł
 3. Encode images into latent space.
 4. Train LoRA using encoded latents and positive conditioning.
 5. Save trained LoRA and generate a loss graph for monitoring.
+
+
+# 🎨 Dataset Overview
+
+My image dataset consisted of **149 mixed paintings**, each paired with a **positive prompt**.  
+Approximately **30 out of 149 images** included light scene descriptions — still focused primarily on **artistic style** rather than narrative content.
+
+To enhance stylistic diversity and strengthen **LoRA learning**, each image was associated with **2–3 prompt variations**, phrased differently but describing the same overall aesthetic.
+
+---
+
+## 🧩 Examples
+
+### Example 1 — Abstract (“pure style”)
+```bash
+<mojstylbeksinskiego> <mojstylbeksinskiego>, (masterpiece, best quality, ultra detailed), dystopian surrealism, painterly brush strokes, oil painting on hardboard, muted tones, dramatic lighting, surreal organic shapes, elongated forms, expression of despair and transcendence, atmospheric perspective
+
