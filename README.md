@@ -263,7 +263,7 @@ _Example of a “quiet” composition from the dataset (image 041)._
 
 # 🖼️ ComfyUI Workflow Documentation
 
-This section summarizes the workflow defined in the provided ComfyUI JSON for image generation with **LoRA and text conditioning**.
+This section outlines the workflow for generating a series of "paintings" / "pseudo-photos" of your Krakow town in the style of an artist using **LoRA and text conditioning**.
 
 ---
 
