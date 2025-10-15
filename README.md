@@ -415,3 +415,36 @@ Saves generated images to disk with a specific naming convention.
 - **Preview nodes** provide instant visual feedback during workflow execution.  
 - **Shift and sampler parameters** allow fine-tuning of diffusion output.
 
+# Beksinski-Inspired LoRA Guide for Kraków
+
+This section explains the training of the LoRA on dystopian surrealism and provides guidance on generating Kraków cityscapes that remain faithful to the learned aesthetic.
+
+---
+
+## 1. What LoRA Learned
+
+Training prompt example:
+
+> "fantastic realism, dystopian surrealism, apocalyptic landscapes, humanoid forms, dark gritty oil painting texture, deep shadows, inferno tones"
+
+LoRA likely encoded:
+
+- **Colors:** reds, oranges, browns, deep shadows  
+- **Texture:** painterly, rough, oil-on-hardboard  
+- **Composition:** surreal, twisted, emotionally heavy  
+- **Lighting:** high contrast, dramatic glow  
+
+> The LoRA biases outputs toward this visual style.
+
+---
+
+## 2. Positive Prompt Structure
+
+```text
+<mojstylbeksinskiego>, masterpiece, ultra-detailed, oil painting, dystopian surrealism, apocalyptic atmosphere, burning skies, ruins, decayed architecture, deep shadows, cinematic lighting, (city of Kraków:1.3), gothic buildings, empty streets, mood of despair
+otes:
+Notes:
+- <mojstylbeksinskiego> → activates LoRA style
+- Scene keywords → e.g., Kraków landmarks
+- Style modifiers → e.g., "smoke and mist, dark red glow"
+- Weight modifiers → e.g., (Kraków old town:1.2)
