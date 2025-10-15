@@ -572,3 +572,5 @@ Negative Prompt:
 ```text
 (lowres, blurry, bright pastel colors, cartoonish, oversaturated, text, watermark, distorted, photographic noise, bad anatomy)
 ```
+This collection of images is located in the folder [Generated Images/ApokalipticImagesKrakowCity](Generated%20Images/ApokalipticImagesKrakowCity).
+
