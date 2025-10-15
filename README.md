@@ -449,3 +449,12 @@ Notes:
 - Scene keywords → e.g., Kraków landmarks
 - Style modifiers → e.g., "smoke and mist, dark red glow"
 - Weight modifiers → e.g., (Kraków old town:1.2)
+## 3. Example Variations
+Full Dystopian Kraków:
+```text
+<mojstylbeksinskiego>, masterpiece, ultra-detailed, apocalyptic dystopian surrealism, ruins of Kraków, burning sky, decaying gothic architecture, empty streets, haunting atmosphere, red inferno light
+```
+Subtle Surreal Kraków:
+```text
+<mojstylbeksinskiego>, masterpiece, ultra-detailed, atmospheric realism, Kraków cityscape at dusk, surreal mood, dark textures, oil painting brushwork, soft inferno glow
+```
