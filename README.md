@@ -302,7 +302,7 @@ Each of these “quiet” images had **three gentle prompt variants**, focusing 
 ![Preview of "Quiet" image](assets/041_1.jpg)
 _Example of a “quiet” composition from the dataset (image 041)._
 
-# 🖼️ ComfyUI Workflow Documentation
+# 🖼️ Image generation
 
 This section outlines the workflow for generating a series of "paintings" / "pseudo-photos" of your Krakow town in the style of an artist using **LoRA and text conditioning**.
 
