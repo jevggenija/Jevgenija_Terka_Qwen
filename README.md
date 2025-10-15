@@ -550,3 +550,25 @@ Positive Prompt:
 ```text
 <lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, surreal dystopian landscape, (Vistula River:1.3), flooded ruins of Kraków, submerged bridges, red reflections on dark water, smoke rising from distance, ruined skyline, decayed buildings, muted colors, atmospheric perspective, oil painting texture
 ```
+Negative Prompt:
+```text
+(bad quality, cartoonish, bright sunlight, clean modern city, text, watermark, oversaturated, low detail, cropped, distorted)
+```
+### 4. Kazimierz District — “Haunted Streets”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, best quality, ultra detailed, dystopian surrealism, (Kazimierz Kraków:1.3), narrow cobblestone streets, ruined synagogues, cracked walls, burning sky above, twisted metal, crawling shadows, oil painting on rough canvas, eerie silence
+```
+Negative Prompt:
+```text
+(bad hands, extra limbs, cartoon, anime, neon, happy mood, bright colors, low quality, text, watermark)
+```
+## 5. Kazimierz District — “Haunted Streets”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, surreal oil painting, panoramic view of Kraków, apocalyptic skyline, burning clouds, dark horizon, broken towers, decayed buildings, haunting atmosphere, cinematic lighting, deep red tones, fantastic realism
+```
+Negative Prompt:
+```text
+(lowres, blurry, bright pastel colors, cartoonish, oversaturated, text, watermark, distorted, photographic noise, bad anatomy)
+```
