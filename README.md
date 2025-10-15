@@ -712,4 +712,4 @@ This collection of images is located in the folder [Generated Images/Twilight Kr
 ![Preview of "Karzymierz" image](Generated%20Images/ComfyUI_00024_.png)
 ![Preview of "Karzymierz"](Generated%20Images/Gemini_Generated_Image_7tzhpw7tzhpw7tzhnanoBanana.png)
 ![Preview of "Karzymierz"](Generated%20Images/Gemini_Generated_Image_i7jehci7jehci7je.png)
-
+![Preview of "Karzymierz"](Generated%20Images/Gemini_Generated_Image_z2qt3tz2qt3tz2qt)
