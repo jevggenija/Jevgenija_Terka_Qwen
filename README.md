@@ -195,5 +195,6 @@ Each of these “quiet” images had **three gentle prompt variants**, focusing 
 ### 🧠 Dataset Balance Strategy
 
 “Quiet” scenes were **interleaved between every 8–10 dense compositions**, ensuring that **LoRA learned to transfer stylistic features** without overtraining on complex multi-figure scenes.
-![Preview of "Quiet" image](assets/041_1.jpg)
+
 ---
+![Preview of "Quiet" image](assets/041_1.jpg)
