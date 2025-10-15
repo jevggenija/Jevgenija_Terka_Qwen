@@ -511,3 +511,37 @@ After running the LoRA prompts, outputs may vary depending on LoRA strength, sce
 - **Prompt Simplification:** Remove overly complex keywords to reduce visual clutter.
 
 > By comparing multiple generations with slight prompt or weight adjustments, outputs can be refined toward a consistent Beksinski-inspired Kraków cityscape.
+
+# Kraków Surrealist LoRA Prompts — Beksiński Style
+
+This repository contains a curated set of **ready-to-use prompts** for generating surreal, dark, and painterly depictions of Kraków using a Beksiński-inspired LoRA trained on 149 images. Each prompt is optimized for **SDXL LoRA** generation and emphasizes dystopian, apocalyptic, and painterly aesthetics while retaining recognizable city landmarks.
+
+---
+
+## Usage Instructions
+
+- **LoRA Weight:** 0.8–1.2 (adjust for stronger/weaker stylistic influence)  
+- **Sampler:** DPM++ 2M Karras or Euler A  
+- **CFG Scale:** 7–9 (higher → more stylized, lower → more natural)  
+- **Steps:** 25–35 (sufficient for detailed output)  
+- **Seed:** Optional — fix for consistent composition across renders  
+
+---
+
+## Prompts
+
+### 1. Wawel Castle — “Apocalyptic Fortress”
+
+**Positive Prompt:**
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, best quality, ultra detailed, dystopian surrealism, (Wawel Castle:1.3), gothic fortress on a hill, burning sky, red inferno light, heavy smoke, ruined battlements, decaying stone, crawling humanoid figures in distance, deep shadows, oil painting on hardboard
+```
+Negative Prompt:
+```text
+(worst quality, low quality, blurry, cartoonish, oversaturated, bright cheerful colors, text, watermark, modern cars, people, bad anatomy, extra limbs, deformed)
+```
+### 2. Main Market Square — “Ruins of Rynek Główny”
+Positive Prompt:
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, apocalyptic surrealism, (Rynek Główny Kraków:1.3), destroyed town square, broken monuments, collapsed St. Mary’s Basilica, red-orange inferno glow, smoke and dust, desolate streets, oil painting brushwork, dark atmospheric lighting
+```text
