@@ -649,12 +649,13 @@ The goal is to generate haunting cityscapes of Kraków that feel atmospheric and
 
 ## Usage Instructions
 
-- **LoRA Weight:** 0.8–1.0 (slightly lower keeps the look softer and more contemplative)  
-- **CFG Scale:** 6.5–8 (balance between realism and stylization)  
+- **LoRA Weight:** 0.8–1.0 (Slightly lower values (around 0.8–0.9) keep the look softer and more contemplative; higher values (0.9–1.0) enhance surreal twilight effects without drifting into apocalyptic tones.)  
+- **CFG Scale:** 6.5–8 (Balances realism with stylization, allowing Beksiński-style textures and mood while preserving believability.)  
 - **Samplers:** DPM++ 2M SDE Karras or DPM++ 3M SDE  
 - **Optional Enhancements:**  
   `soft fog, subtle red-orange highlights, cinematic twilight lighting, quiet atmosphere`  
-
+- Ideal For:
+  Dreamlike cityscapes that blend melancholy, subtle drama, and contemplative beauty with a surreal, soft twilight ambiance.
 ---
 
 ## Prompts
