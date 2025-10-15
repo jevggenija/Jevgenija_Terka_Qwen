@@ -197,8 +197,8 @@ This LoRA training setup was carefully designed for a **small dataset** of **149
 | **Gradient Accumulation** | 8 | Effectively increases batch size without needing more GPU memory. |
 | **Low Rank** | 8 | Limits the number of trainable parameters to prevent overfitting. |
 | **Learning Rate** | 0.0003 | Moderate rate avoids large weight updates that could overfit. |
-| **Training Steps** | 1000 | With 149 images, each image is seen multiple times, giving effective epochs: `(1000 × 8) / 149 ≈ 53`. This is reasonable for small datasets. |
-| **Loss Function** | MSE | Stable for small datasets; helps the LoRA learn subtle style differences without unstable gradients from adversarial losses. |
+| **Training Steps** | 1000 | With 149 images, each image is seen multiple times, giving effective epochs: `(1000 × 8) / 149 ≈ 53`. This is reasonable for small datasets. Each image is effectively seen ~53 times during training due to gradient accumulation.|
+| **Loss Function** | MSE | Provides a stable learning signal. Unlike perceptual or adversarial losses, MSE is lightweight, predictable and for small datasets; helps the LoRA learn subtle style differences without unstable gradients from adversarial losses. |
 | **Precision** | bf16 | Reduces memory usage while maintaining sufficient precision for large models. |
 | **Gradient Checkpointing** | Enabled | Allows training without a massive GPU by saving memory. |
 
@@ -353,7 +353,7 @@ Encodes text prompts into **CLIP embeddings** for conditioning the diffusion mod
 
 | Node | Type | Parameters |
 |------|------|------------|
-| **LoraLoaderModelOnly** | `LoraLoaderModelOnly` | LoRA: `ImrovedDatabase_1000_steps_00001_.safetensors`, Strength: `1.21` |
+| **LoraLoaderModelOnly** | `LoraLoaderModelOnly` | LoRA: `ImrovedDatabase_1000_steps_00001_.safetensors`, Strength: `1` |
 
 **Description:**  
 Applies a **pre-trained LoRA** to the UNet for style or subject adaptation.
