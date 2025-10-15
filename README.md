@@ -544,4 +544,9 @@ Negative Prompt:
 Positive Prompt:
 ```text
 <lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, apocalyptic surrealism, (Rynek Główny Kraków:1.3), destroyed town square, broken monuments, collapsed St. Mary’s Basilica, red-orange inferno glow, smoke and dust, desolate streets, oil painting brushwork, dark atmospheric lighting
+```
+### 3. Vistula River — “Drowned Kraków”
+Positive Prompt:
 ```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra detailed, surreal dystopian landscape, (Vistula River:1.3), flooded ruins of Kraków, submerged bridges, red reflections on dark water, smoke rising from distance, ruined skyline, decayed buildings, muted colors, atmospheric perspective, oil painting texture
+```
