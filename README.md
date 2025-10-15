@@ -184,6 +184,47 @@ These latents are used as inputs during LoRA training.
 
 > 🧩 **Tip:** This data setup can be extend to obtain better results by chaining multiple training datasets, enabling CLIP skip, or integrating custom loss functions for domain-specific LoRAs.
 
+# 📝 Small Dataset Considerations for LoRA Training
+
+This LoRA training setup was carefully designed for a **small dataset** of **149 images**. Full model fine-tuning would overfit with such limited data, but LoRA is ideal here because it updates only a **low-rank subset of weights**, allowing the model to learn a new style without catastrophic forgetting.
+
+---
+
+## 🔧 Key Parameter Choices
+
+| Parameter | Value | Reasoning |
+|-----------|-------|-----------|
+| **Gradient Accumulation** | 8 | Effectively increases batch size without needing more GPU memory. |
+| **Low Rank** | 8 | Limits the number of trainable parameters to prevent overfitting. |
+| **Learning Rate** | 0.0003 | Moderate rate avoids large weight updates that could overfit. |
+| **Training Steps** | 1000 | With 149 images, each image is seen multiple times, giving effective epochs: `(1000 × 8) / 149 ≈ 53`. This is reasonable for small datasets. |
+| **Loss Function** | MSE | Stable for small datasets; helps the LoRA learn subtle style differences without unstable gradients from adversarial losses. |
+| **Precision** | bf16 | Reduces memory usage while maintaining sufficient precision for large models. |
+| **Gradient Checkpointing** | Enabled | Allows training without a massive GPU by saving memory. |
+
+---
+
+## 🧠 Rationale
+
+- Previous attempts with small datasets **overfitted the model**, so parameters were carefully tuned this time.  
+- Using **LoRA with low-rank updates** allows learning new styles without modifying the full model.  
+- **Gradient accumulation** combined with **batch size 1** simulates an effective batch of 8, making training more stable.  
+- **1000 training steps** ensure each image is seen multiple times, giving **≈53 effective epochs**, which is reasonable for 149 images.  
+- Using **MSE loss** ensures subtle style features are captured reliably, avoiding instability from more complex losses.  
+- Memory optimization with **bf16 precision + gradient checkpointing** allows training large models on limited hardware.  
+
+---
+
+## ✅ Summary
+
+This setup is **well-tuned for a small dataset**:
+
+- Low-rank LoRA avoids overfitting.  
+- Gradient accumulation + bf16 keeps memory usage low.  
+- Moderate learning rate + 1000 steps ensures convergence.  
+- With 149 images, the model can learn the author’s style reasonably well without requiring a huge dataset.  
+
+> Overall, this training configuration balances **learning efficiency**, **memory constraints**, and **overfitting prevention** for small datasets.
 
 
 # 🎨 Dataset Overview
