@@ -484,3 +484,30 @@ Scene	Prompt Addition
 - LoRA weight adjusted in the range of 0.8–1.2.  
 - Scene modifiers were used for emphasis.  
 - Extreme keywords were reduced for subtler outputs.  
+
+## 8. Interpreting Generated Results
+
+After running the LoRA prompts, outputs may vary depending on LoRA strength, scene modifiers, and prompt specificity. Here's what to look for:
+
+### 8.1 Visual Style
+- **Color Palette:** Look for dominant reds, oranges, browns, and deep shadows.  
+- **Texture:** Painterly, rough, oil-on-hardboard appearance.  
+- **Lighting:** High contrast, dramatic glow, or inferno-like highlights.  
+- **Composition:** Surreal, twisted, emotionally heavy cityscapes.
+
+### 8.2 Kraków Landmarks
+- Wawel Castle, Rynek Główny, or Vistula River may appear warped, decayed, or dystopian.  
+- Modifiers like `(Wawel Castle:1.3)` help emphasize landmark recognition while keeping the LoRA’s style.
+
+### 8.3 Common Artifacts
+- Slightly distorted architecture or extra limbs if human figures are included.  
+- Over-saturated skies or exaggerated shadows at higher LoRA strength (>1.0).  
+- Cropped or out-of-frame elements if the scene is complex or prompt lacks clear framing.
+
+### 8.4 Adjusting Results
+- **LoRA Strength:** Reduce from 1.0 → 0.8 for subtler style. Increase → 1.2 for more dramatic effects.  
+- **Negative Prompts:** Remove unwanted elements (e.g., modern cars, neon lights, bright colors).  
+- **Scene Modifiers:** Add or adjust weights for landmarks or specific atmospheres.  
+- **Prompt Simplification:** Remove overly complex keywords to reduce visual clutter.
+
+> By comparing multiple generations with slight prompt or weight adjustments, outputs can be refined toward a consistent Beksinski-inspired Kraków cityscape.
