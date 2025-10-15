@@ -210,7 +210,7 @@ This LoRA training setup was carefully designed for a **small dataset** of **149
 - Using **LoRA with low-rank updates** allows learning new styles without modifying the full model.  
 - **Gradient accumulation** combined with **batch size 1** simulates an effective batch of 8, making training more stable.  
 - **1000 training steps** ensure each image is seen multiple times, giving **≈53 effective epochs**, which is reasonable for 149 images.  
-- Using **MSE loss** allows the model to learn subtle stylistic details effectively, offering a stable and efficient learning signal. This avoids the unpredictable gradients and potential overfitting that can arise when using perceptual or adversarial losses, especially on small datasets.  
+- **MSE loss** allows the model to learn subtle stylistic details effectively, offering a stable and efficient learning signal. This avoids the unpredictable gradients and potential overfitting that can arise when using perceptual or adversarial losses, especially on small datasets.  
 - Memory optimization with **bf16 precision + gradient checkpointing** allows training large models on limited hardware.  
 
 ---
