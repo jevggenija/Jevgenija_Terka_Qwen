@@ -260,3 +260,117 @@ Each of these “quiet” images had **three gentle prompt variants**, focusing 
 ---
 ![Preview of "Quiet" image](assets/041_1.jpg)
 _Example of a “quiet” composition from the dataset (image 041)._
+
+# 🖼️ ComfyUI Workflow Documentation
+
+This section summarizes the workflow defined in the provided ComfyUI JSON for image generation with **LoRA and text conditioning**.
+
+---
+
+## 📂 1. Step 1: Load Images
+
+| Node | Type | Parameters |
+|------|------|------------|
+| **EmptyLatentImage** | `EmptyLatentImage` | Width: `768`, Height: `768`, Batch Size: `1` |
+
+**Description:**  
+Creates empty latent tensors as a starting point for image generation.
+
+---
+
+## 📂 2. Step 2: Load Base Models
+
+| Node | Type | Parameters / Checkpoints |
+|------|------|-------------------------|
+| **UNETLoader** | `UNETLoader` | Checkpoint: `qwen_image_fp8_e4m3fn.safetensors`, Weight dtype: `default` |
+| **VAELoader** | `VAELoader` | VAE: `qwen_image_vae.safetensors` |
+| **CLIPLoader** | `CLIPLoader` | CLIP: `qwen_2.5_vl_7b_fp8_scaled.safetensors`, Type: `qwen_image`, Device: `default` |
+
+**Description:**  
+Loads the core components for image generation:  
+- **UNet**: Diffusion backbone  
+- **VAE**: Latent encoding/decoding  
+- **CLIP**: Text embedding encoder  
+
+---
+
+## 📂 3. Step 3: Prompt Conditioning
+
+| Node | Type | Parameters |
+|------|------|------------|
+| **CLIPTextEncode (Positive Prompt)** | `CLIPTextEncode` | `<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece:1.5, ultra detailed:1.5, soft dystopian surrealism:1.4, (Wawel Castle:1.5), gothic castle towers:1.4, empty castle courtyard:1.4, pale evening light:1.4, ...` |
+| **CLIPTextEncode (Negative Prompt)** | `CLIPTextEncode` | `low quality, blurry, out of focus, pixelated, cartoonish, modern elements, neon signs, bright saturated colors, smiling people, daytime, sunny sky, futuristic city, modern cars, cluttered streets, text, watermark, signature, overexposed, unrealistic colors, poorly detailed` |
+
+**Description:**  
+Encodes text prompts into **CLIP embeddings** for conditioning the diffusion model.  
+- **Positive prompt**: Style, subject, and artistic directions  
+- **Negative prompt**: Artifacts and undesired elements  
+
+---
+
+## 📂 4. Step 4: Apply LoRA Style
+
+| Node | Type | Parameters |
+|------|------|------------|
+| **LoraLoaderModelOnly** | `LoraLoaderModelOnly` | LoRA: `ImrovedDatabase_1000_steps_00001_.safetensors`, Strength: `1.21` |
+
+**Description:**  
+Applies a **pre-trained LoRA** to the UNet for style or subject adaptation.
+
+---
+
+## 📂 5. Step 5: Sampling & Latent Processing
+
+| Node | Type | Parameters |
+|------|------|------------|
+| **KSampler** | `KSampler` | Sampler: `euler`, Steps: `50`, CFG: `7.5`, Seed: `0`, Denoise: `1`, Scheduler: `simple` |
+| **ModelSamplingAuraFlow** | `ModelSamplingAuraFlow` | Shift: `3.12` |
+
+**Description:**  
+- **KSampler**: Performs diffusion sampling to generate latent images  
+- **ModelSamplingAuraFlow**: Adds subtle style/shift modifications to the latent output  
+
+---
+
+## 📂 6. Step 6: Decode & Preview Images
+
+| Node | Type | Parameters |
+|------|------|------------|
+| **VAEDecode** | `VAEDecode` | Converts latent images back to RGB images using loaded VAE |
+| **PreviewImage** | `PreviewImage` | Displays generated images for quick inspection |
+
+**Description:**  
+Decodes the final latent representations into images and previews them.
+
+---
+
+## 📂 7. Step 7: Save Output
+
+| Node | Type | Parameters |
+|------|------|------------|
+| **SaveImage** | `SaveImage` | Filename prefix: `Bsilicatokeniqwen lessdetails` |
+
+**Description:**  
+Saves generated images to disk with a specific naming convention.
+
+---
+
+## 🧭 Workflow Summary
+
+1. **Create Latents** → Start with empty latent images.  
+2. **Load Models** → UNet, VAE, and CLIP are loaded for generation.  
+3. **Encode Prompts** → Positive and negative text conditioning is applied.  
+4. **Apply LoRA** → Style or subject adaptation is applied to the UNet.  
+5. **Sampling** → Latents are processed with KSampler and optional aura shifts.  
+6. **Decode & Preview** → Latents are decoded and displayed as images.  
+7. **Save Output** → Final images are saved to disk.
+
+---
+
+## 🧾 Notes
+
+- **LoRA integration** allows flexible style transfer without retraining the base model.  
+- **Positive & Negative prompts** control aesthetics and artifact suppression.  
+- **Preview nodes** provide instant visual feedback during workflow execution.  
+- **Shift and sampler parameters** allow fine-tuning of diffusion output.
+
