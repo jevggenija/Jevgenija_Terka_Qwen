@@ -77,7 +77,7 @@ This project specifically focuses on generating images inspired by the **Zdzisł
     
 # 🧠 LoRA Training Summary
 
-This document summarizes the configuration and workflow used to train a **LoRA (Low-Rank Adaptation)** model using **ComfyUI v0.4**.
+This section summarizes the configuration and workflow used to train a **LoRA (Low-Rank Adaptation)** model using **ComfyUI v0.4**.
 
 ---
 
