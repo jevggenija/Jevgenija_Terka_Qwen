@@ -458,3 +458,15 @@ Subtle Surreal Kraków:
 ```text
 <mojstylbeksinskiego>, masterpiece, ultra-detailed, atmospheric realism, Kraków cityscape at dusk, surreal mood, dark textures, oil painting brushwork, soft inferno glow
 ```
+## 4. Negative Prompt
+```text
+(worst quality, low quality, blurry, oversaturated, cartoonish, unrealistic proportions, bad anatomy, extra limbs, text, watermark, modern cars, neon lights, bright colors)
+(bad hands, extra legs, deformed faces, JPEG artifacts, lowres, out of frame, cropped, distorted)
+```
+Ensures outputs remain consistent with the dystopian, painterly aesthetic.
+## 5. Prompt Tips
+```text
+<lora:mojstylbeksinskiego:1.0>, <mojstylbeksinskiego>, masterpiece, ultra-detailed, oil painting, dystopian surrealism, Kraków ruins under red sky
+```
+- :1.0 → LoRA strength (adjust 0.8–1.2)
+- Use 1–2 style tokens; avoid repetition
