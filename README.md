@@ -198,3 +198,4 @@ Each of these “quiet” images had **three gentle prompt variants**, focusing 
 
 ---
 ![Preview of "Quiet" image](assets/041_1.jpg)
+_Example of a “quiet” composition from the dataset (image 041)._
