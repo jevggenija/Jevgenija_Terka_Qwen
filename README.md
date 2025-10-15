@@ -445,7 +445,7 @@ LoRA likely encoded:
 
 ```
 Notes:
-- "<mojstylbeksinskiego>" → activates LoRA style
+- &lt;mojstylbeksinskiego&gt; → activates LoRA style
 - Scene keywords → e.g., Kraków landmarks
 - Style modifiers → e.g., "smoke and mist, dark red glow"
 - Weight modifiers → e.g., (Kraków old town:1.2)
