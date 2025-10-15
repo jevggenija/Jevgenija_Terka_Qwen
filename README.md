@@ -706,7 +706,7 @@ Negative Prompt:
 ```text
 (low quality, cartoon, oversaturated, bright sunlight, text, watermark, modern vehicles, happy mood)
 ```
-This collection of images is located in the folder [Generated Images/Twilight Kraków](Generated%20Images/Twilight Kraków).
+This collection of images is located in the folder [Generated Images/Twilight Kraków](Generated%20Images/Twilight%20Kraków).
 
 ### 1.Test generating art in a similar art style using Nano Banana and GPT-Image
 
