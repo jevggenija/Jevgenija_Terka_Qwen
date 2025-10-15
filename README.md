@@ -442,7 +442,8 @@ LoRA likely encoded:
 
 ```text
 <mojstylbeksinskiego>, masterpiece, ultra-detailed, oil painting, dystopian surrealism, apocalyptic atmosphere, burning skies, ruins, decayed architecture, deep shadows, cinematic lighting, (city of Kraków:1.3), gothic buildings, empty streets, mood of despair
-otes:
+
+```
 Notes:
 - <mojstylbeksinskiego> → activates LoRA style
 - Scene keywords → e.g., Kraków landmarks
