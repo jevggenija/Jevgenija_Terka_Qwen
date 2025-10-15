@@ -140,7 +140,6 @@ To enhance stylistic diversity and strengthen **LoRA learning**, each image was 
    ```bash
 <mojstylbeksinskiego> <mojstylbeksinskiego>, (masterpiece, best quality, ultra detailed), dystopian surrealism, painterly brush strokes, oil painting on hardboard, muted tones, dramatic lighting, surreal organic shapes, elongated forms, expression of despair and transcendence, atmospheric perspective
 
-
 ### 🏚️ Example 2 — Scene-based (“landscape / composition”)
    ```bash
 A humanoid figure with bandaged head walking through ruins, painted in <mojstylbeksinskiego> style, elongated anatomy, haunting atmosphere, soft oil textures, dark red sky, emotional tension, chiaroscuro shadows
