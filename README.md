@@ -140,3 +140,53 @@ To enhance stylistic diversity and strengthen **LoRA learning**, each image was 
 ```bash
 <mojstylbeksinskiego> <mojstylbeksinskiego>, (masterpiece, best quality, ultra detailed), dystopian surrealism, painterly brush strokes, oil painting on hardboard, muted tones, dramatic lighting, surreal organic shapes, elongated forms, expression of despair and transcendence, atmospheric perspective
 
+
+### 🏚️ Example 2 — Scene-based (“landscape / composition”)
+```bash
+A humanoid figure with bandaged head walking through ruins, painted in <mojstylbeksinskiego> style, elongated anatomy, haunting atmosphere, soft oil textures, dark red sky, emotional tension, chiaroscuro shadows
+
+### 💀 Example 3 — Emotional variation
+```bash
+<mojstylbeksinskiego> <mojstylbeksinskiego>, somber surrealism, expressive brush strokes, depiction of anguish, blurred figures, oil painting technique, heavy textures, cold desaturated tones
+
+---
+
+## 🗂️ File Structure Example
+image_001_1.jpg → 001_1.txt
+image_001_2.jpg → 001_2.txt
+image_001_3.jpg → 001_3.txt
+
+---
+
+## 💡 Why It Works
+
+- 🔹 **Token reinforcement** — Repeating `<mojstylbeksinskiego>` at the beginning helps anchor the unique token.  
+- 🔹 **Light textual variation** — Small changes in phrasing teach the model to understand the range of the style rather than memorize fixed descriptions.  
+- 🔹 **Tag permutation** — Mixing the order of tags (lighting, color, composition) provides CLIP with richer contextual signals.  
+- 🔹 **Phrase order shuffling** — Moving color information toward the beginning or end helps CLIP better capture *conceptual* rather than *syntactic* connections.
+
+Using the same token (`<mojstylbeksinskiego>`) across all paintings ensures that **LoRA recognizes it as a shared stylistic identity.**
+
+---
+
+## 🌌 “Quiet” Compositions
+
+To maintain balance and prevent overfitting on dense, figure-heavy scenes, the dataset also included **1–2 calm compositions** — such as minimal landscapes or architectural fragments.
+
+Each of these “quiet” images had **three gentle prompt variants**, focusing on **atmosphere and color harmony** rather than complex structures.
+
+---
+
+### Example (Quiet Scene – `041`)
+
+#### `041_1.jpg`
+```bash
+<mojstylbeksinskiego>, masterpiece, best quality, ultra-detailed, 8k, sharp focus, dark cosmic seascape, surreal misty shore with sandy reflective beach, turbulent dark night sky blending into crashing waves, massive mountainous wave or fog-shrouded hills in background, deep cool blue and teal palette, scattered bright stars and celestial glow mixed into clouds and waves, dark abstract entity with a bright star inside (upper right), solitary dark bird in flight (left center), small crescent shape on sand, highly textured oil painting on canvas, haunting, mysterious, nocturnal:1.4
+
+#### `041_2.jpg`
+```bash
+<mojstylbeksinskiego>, ultra-detailed masterpiece, best quality, 8k, sharp focus, dark cosmic seascape, misty surreal shoreline with wet reflective sand, crashing waves merging with turbulent night sky, massive mountainous wave or fog-covered hills in distance, celestial glow and scattered stars woven into clouds and waves, dark abstract entity containing bright star in upper right, solitary bird or seagull flying left of center, small crescent shape on sand, deep cool blue and teal palette, highly textured oil painting on canvas, haunting, nocturnal, mysterious:1.4
+
+#### `041_3.jpg`
+```bash
+<mojstylbeksinskiego>, best quality, masterpiece, ultra-detailed 8k, sharp focus, dark cosmic seascape, surreal misty shore, sandy beach with reflective wet edge, turbulent dark sky blending with crashing waves, massive mountainous wave or fog-shrouded hills in background, scattered stars and celestial glow in clouds and waves, dark abstract entity with bright star (upper right), solitary dark bird in flight (left center), small crescent on sand, deep cool blue and teal palette, highly textured oil painting on canvas, haunting, mysterious, nocturnal:1.4
